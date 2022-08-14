@@ -65,10 +65,8 @@ body {
   border-right: 3px solid powderblue;
 }
 
-/* Paper flip effect */
-.flipped .front,
-.flipped .back {
-  transform: rotateY(180deg);
+.back {
+  z-index: 0;
 }
 
 .front-content,
@@ -84,15 +82,20 @@ body {
   transform: rotateY(180deg);
 }
 
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+  transform: rotateY(180deg);
+}
 /* Paper stack order */
-.p1 {
+#p1 {
   z-index: -1;
 }
 
-.p2 {
+#p2 {
   z-index: -2;
 }
 
-.p3 {
+#p3 {
   z-index: -3;
 }
