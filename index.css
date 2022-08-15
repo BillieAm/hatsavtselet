@@ -29,7 +29,7 @@ body {
     rgba(58, 93, 98, 1) 16%,
     rgba(164, 116, 22, 1) 100%
   );
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
