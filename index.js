@@ -2,6 +2,11 @@ const prevBtn = document.getElementById("prev-btn");
 const nextBtn = document.getElementById("next-btn");
 const book = document.getElementById("book");
 
+document.body.addEventListener("keydown", function (e) {
+  if (e.key === "ArrowLeft") goNextPage();
+  if (e.key === "ArrowRight") goPrevPage();
+});
+
 const paper1 = document.getElementById("p1");
 const paper2 = document.getElementById("p2");
 const paper3 = document.getElementById("p3");
