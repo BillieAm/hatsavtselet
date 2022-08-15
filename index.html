@@ -4,14 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/d1b39089ee.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+
     <title>חצבצלת</title>
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" defer></script>
   </head>
   <body dir="rtl">
-    <!-- Previous Button -->
-    <button id="prev-btn">הקודם</button>
-
     <!-- Book -->
     <div id="book" class="book">
       <!-- Paper 1 -->
@@ -55,7 +67,17 @@
       </div>
     </div>
 
-    <!-- Next Button -->
-    <button id="next-btn">הבא</button>
+    <div class="flip-buttons">
+      <!-- Previous Button -->
+      <button id="prev-btn">
+        <i class="fa-solid fa-circle-arrow-right"></i>
+      </button>
+
+      <!-- Next Button -->
+      <button id="next-btn">
+        <i class="fa-solid fa-circle-arrow-left"></i>
+      </button>
+    </div>
+    <p>ניתן גם לדפדף על ידי חיצי המקלדת</p>
   </body>
 </html>
