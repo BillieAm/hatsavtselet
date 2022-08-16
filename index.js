@@ -1,6 +1,9 @@
-const prevBtn = document.getElementById("prev-btn");
-const nextBtn = document.getElementById("next-btn");
 const book = document.getElementById("book");
+
+document.body.addEventListener("click", function (e) {
+  if (e.x < document.body.clientWidth / 2) goNextPage();
+  if (e.x > document.body.clientWidth / 2) goPrevPage();
+});
 
 document.body.addEventListener("keydown", function (e) {
   if (e.key === "ArrowLeft") goNextPage();
@@ -10,10 +13,6 @@ document.body.addEventListener("keydown", function (e) {
 const paper1 = document.getElementById("p1");
 const paper2 = document.getElementById("p2");
 const paper3 = document.getElementById("p3");
-
-// Event Listeners
-prevBtn.addEventListener("click", goPrevPage);
-nextBtn.addEventListener("click", goNextPage);
 
 // Business Logic
 let currentLocation = 1;
